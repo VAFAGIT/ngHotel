@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero-text">
+                    <h1>ScDev Hotel</h1>
+                    <p>Here are the best hotel booking sites, including recommendations for international
+                        travel and for finding low-priced hotel rooms.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+                <div class="booking-form">
+                    <h3>Login</h3>
+                    <form class="mt-4" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+                        <div class="check-date">
+                            <label >Email</label>
+                            
+                            <input type="email" formControlName="email" title="email" >
+                            <!-- <i class="icon_email"></i> -->
+                        </div>
+                        <div class="check-date">
+                            <label>Password</label>
+                            <input  formControlName="password" type="password" title="password">
+                            <!-- <i class="icon_calendar"></i> -->
+                        </div>
+                        <button type="submit">Sign In</button>
+                    </form>
+                    <div class="text-center">
+                      <span class="text-xs font-semibold">Don't have account?</span>
+                      <a (click)="Register()" class="text-xs font-semibold">Sign up</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-slider owl-carousel">
+        <!-- <div class="hs-item set-bg" data-setbg="/assets/img/hero/hero-1.jpg"></div>
+        <div class="hs-item set-bg" data-setbg="/assets/img/hero/hero-2.jpg"></div> -->
+        <div class="hs-item set-bg" data-setbg="/assets/img/hero/hero-3.jpg"></div>
+    </div>
+</section>
+  
+    
+</body>
+</html>
